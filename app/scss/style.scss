@@ -2,9 +2,14 @@
 @import './reset.scss';
 
 .information{
-    width:375px;
+    display:flex;
+    justify-content: space-between;
+    &__item{
+        width:375px;
+
     background-color:$bgrinfor;
     position:relative;
+    }
     &__logo{
         position: absolute;
             top:0;
@@ -18,7 +23,7 @@
         >p{
             color:$colorp;
             font-weight: bold;
-font-size: 18px;
+font-size: 19px;
 line-height: 129%;
         }
     }
