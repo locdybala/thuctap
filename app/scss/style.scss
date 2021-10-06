@@ -28,15 +28,27 @@ line-height: 129%;
         }
     }
     &__link{
-        font-size:15px;
-        font-style:italic;
-        color:$colorlink;
+       
+        display: flex;
+align-items: center;
         padding:0 0 18px 15px;
         a{
             color:$colora;
-            font-style:normal;
             font-weight:700;
             text-decoration:none;
+            height:100%;
+            img{
+                margin-top:auto;
+                margin-bottom:auto;
+            }
+        }
+        p{
+            color:$colorlink;
+            font-size:15px;
+            font-style:italic;
+            padding-left:6px;
+            font-weight: 300;
+            line-height: 18px;
         }
     }
 

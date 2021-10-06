@@ -29,7 +29,8 @@ const content = [
             <p>${obj.title}</p>
         </div>
         <div class="information__link">
-            <a href="">${obj.link}</a> tài trợ
+            <a href="">${obj.link}</a> 
+            <p> tài trợ</p>
         </div>
     </div>`
     )
