@@ -1,55 +1,53 @@
-@import './variables.scss';
-@import './reset.scss';
+@import "./variables.scss";
+@import "./reset.scss";
 
-.information{
-    display:flex;
-    justify-content: space-between;
-    &__item{
-        width:375px;
-
-    background-color:$bgrinfor;
-    position:relative;
+.information {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    width: 375px;
+    margin-bottom: 10px;
+    background-color: $bgrinfor;
+    position: relative;
+  }
+  &__logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__img {
+    margin-bottom: 12px;
+  }
+  &__title {
+    padding: 0 15px 10px;
+    > p {
+      color: $colorp;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 129%;
     }
-    &__logo{
-        position: absolute;
-            top:0;
-            right:0;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 0 0 18px 15px;
+    a {
+      color: $colora;
+      font-weight: 700;
+      text-decoration: none;
+      height: 100%;
+      img {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
     }
-    &__img{
-        margin-bottom:12px;
+    p {
+      color: $colorlink;
+      font-size: 15px;
+      font-style: italic;
+      padding-left: 6px;
+      font-weight: 300;
+      line-height: 18px;
     }
-    &__title{
-        padding:0 15px 10px;
-        >p{
-            color:$colorp;
-            font-weight: bold;
-font-size: 19px;
-line-height: 129%;
-        }
-    }
-    &__link{
-       
-        display: flex;
-align-items: center;
-        padding:0 0 18px 15px;
-        a{
-            color:$colora;
-            font-weight:700;
-            text-decoration:none;
-            height:100%;
-            img{
-                margin-top:auto;
-                margin-bottom:auto;
-            }
-        }
-        p{
-            color:$colorlink;
-            font-size:15px;
-            font-style:italic;
-            padding-left:6px;
-            font-weight: 300;
-            line-height: 18px;
-        }
-    }
-
+  }
 }
