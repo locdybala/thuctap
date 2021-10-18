@@ -1,5 +1,20 @@
 import {content} from '../../dist/mock-data.js'
-
+const content1 = [
+  {
+    id: 3,
+    logo:'app/img/adxlogo2.png',
+    img:'app/img/Rectangle.png',
+    title: 'Hè này, trải nghiệm kỳ nghỉ 5 sao tại thiên đường nghỉ dưỡng Vinpearl 2022',
+    link:'thegioididong.vn'
+  },
+  {
+      id: 4,
+      logo:'app/img/adxlogo2.png',
+      img:'app/img/Rectangle.png',
+      title: 'Hè này, trải nghiệm kỳ nghỉ 5 sao tại thiên đường nghỉ dưỡng Vinpearl 2022',
+      link:'<img src="app/img/image9.png" alt=""/>'
+  },
+]
     var styles = "./dist/style.css";
     var newSS=document.createElement('link');
     newSS.rel='stylesheet';
@@ -7,7 +22,7 @@ import {content} from '../../dist/mock-data.js'
     console.log(newSS);
     document.getElementsByTagName("head")[0].appendChild(newSS);
   
-  console.log(content)
+
   const renderHtml = (data) => {
     const htmlResult = data.map(
       (obj) =>
